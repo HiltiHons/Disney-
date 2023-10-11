@@ -1,0 +1,57 @@
+Source:     
+
+            https://www.disneyplus.com/de-at                                                                                || Disne + is the website i try to clone.
+            https://www.youtube.com/watch?v=W6NZfCO5SIk&ab_channel=ProgrammingwithMosh&themeRefresh=1                       || JavaScipt tutorial.
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------
+Programs&Addons            
+
+            https://chrome.google.com/webstore/detail/image-downloader-imageye/agionbommeaifngbhincahgmoflcikhm             || Bild-Downloader - Imageye, addon for chrome to download images of a website, very usefull!!!
+            https://filezilla-project.org/                                                                                  || The FTP-client is use for uploading my data to the server.
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------
+Desing:
+
+            For my site we expact that our share of users have all a monitor that supports 16:9 aspect ratio
+            would be a too long project for only dealing with all sizes
+            ------
+            Insead of using for every image a unique container, i give it a try and use a combination of a parent class and a id as child that holds the path to the source of the img
+            For the Font i use 'Montserrat'. The Font used on DisneyPlus is 'Aven', but it is not under a free License.
+
+
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------
+Gedanken:
+
+            One of the first problems was, which aspect radio would be the way to go, cause disney+ handles the behaviour not the way i thought it would be
+           
+            Thats the way the Disney+ website handles it:
+
+            -->   @media only screen and (min-width: 1025px)
+            -->   @media only screen and (min-width: 769px) and (max-width: 1024px)
+
+
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------
