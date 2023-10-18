@@ -15,6 +15,17 @@ a {
 p {
   font-size: 20px;
   font-weight: 300;
+  color: #f9f9f9;
+}
+h1 {
+  font-size: 42px;
+  line-height: 3rem;
+}
+h2 {
+  color: #f9f9f9;
+}
+h3 {
+  color: #f9f9f9;
 }
 h4 {
   font-size: 20px;
@@ -27,18 +38,24 @@ h5 {
   color: #f9f9f9;
   font-weight: 600;
 }
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background: #040714;
+}
+
 img {
   background-size: contain;
 }
-body {
-  width: 100%;
-  background: #040714;
+input {
+  height: 50px;
+  border-radius: 5px;
+  background-color: #30333e;
 }
-.buttonRegister {
-  background-color: #016cf9;
-  width: 30%;
-  height: 49px;
+footer {
+  padding-bottom: -4000px;
 }
+
 #container1 {
   background-image: url(../images/index/icon1.png);
 }
@@ -51,7 +68,7 @@ body {
 #containerImage1 {
   background-image: url("../images/index/original.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   background-size: contain;
 }
 #containerImage2 {
@@ -112,9 +129,18 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  box-sizing: border-box;
 }
 #dropBtn {
   background-color: chartreuse;
+}
+#grab {
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+#safd {
+  padding-left: 5%;
+  text-align: start;
 }
 #toggleButton {
   background-color: brown;
@@ -122,7 +148,7 @@ body {
 
 .banner {
   padding-top: 20px;
-  height: 80px;
+  height: 90px;
   text-align: center;
   position: relative;
   background: linear-gradient(180deg, #030c40, #003ccc);
@@ -136,32 +162,50 @@ body {
 .buttonAction:hover {
   background-color: #003ccc;
 }
-.container {
-  font-size: 25px;
-  position: absolute;
-  left: 90px;
-  margin-top: 350px;
-  width: 35%;
+
+.buttonRegister {
+  height: 60px;
+  width: 360px;
+  background-color: #016cf9;
+  border: none;
+  border-radius: 4px;
   color: #f9f9f9;
+  font-size: 18px;
+}
+.container {
+  color: #f9f9f9;
+  font-size: 25px;
+  left: 90px;
+  margin-top: 15%;
+  position: absolute;
+  max-width: 35%;
 }
 .containerIcon {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  height: 120px;
-  color: #f9f9f9;
-  font-size: 20px;
-  justify-content: center;
   background-position: center;
+  color: #f9f9f9;
+  display: grid;
+  font-size: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  min-height: 120px;
+  justify-content: center;
+}
+.containerIcon2 {
+  color: #f9f9f9;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: baseline;
+  height: 15vw;
 }
 .containerIconText {
   color: #f9f9f9;
 }
 .dropdown-content {
   width: 100px;
-  height: 100px;
+  min-height: 100px;
   background-color: #003ccc;
 }
 .einloggen {
+  z-index: 1;
   font-size: 16px;
   margin: 10px;
   border: 1px solid silver;
@@ -170,7 +214,7 @@ body {
   background-color: black;
   color: rgb(224, 224, 224);
   width: 120px;
-  height: 50px;
+  min-height: 50px;
   margin-right: 40px;
 }
 .einloggen:hover {
@@ -181,48 +225,69 @@ body {
 }
 .fine {
   font-size: 10px;
+  color: #f9f9f9;
 }
 .footer {
   width: 100vw;
-  height: 1000px;
+  min-height: 1000px;
   background-color: #f9f9f9;
+}
+.gridContainer {
+  display: grid;
+  grid-template-columns: 100% 100% 100% 100%;
+  grid-template-rows: 260px 260px 260px 260px;
 }
 .indexIcon {
   align-items: center;
+  line-height: 26px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.indexIcon p {
+  color: #c0c0c0;
+  font-size: 18px;
+  font-weight: 400;
+}
+.indexIcon2 {
+  align-items: center;
   width: 100%;
-  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .indexOriginal {
+  min-height: 1000px;
+}
+.indexOriginalTop {
   display: flex;
+  justify-content: center;
   box-sizing: border-box;
-  width: 100%;
-  height: 110vh;
+  max-width: 100vw;
+  min-height: 1000px;
 }
 .main {
   margin: 0px;
   padding: 0px;
 }
 .mainContainer {
-  width: 95vw;
-  height: 41vw;
+  width: 100%;
+  height: auto;
   box-sizing: content-box;
   background-repeat: no-repeat;
   background-size: contain;
 }
 .mainFont {
-  box-sizing: content-box;
+  max-height: 1500px;
   flex-direction: column;
-  padding: 15vw;
-  font-size: 40px;
   font-weight: 600;
-  padding-top: 400px;
   align-items: center;
   color: white;
   display: flex;
   text-align: center;
+  box-sizing: border-box;
+  max-width: 70vw;
+  text-align: center;
+  justify-content: center;
 }
 .middleFont {
   color: #f9f9f9;
@@ -243,6 +308,11 @@ body {
 }
 .parent {
   display: flex;
+  max-width: 100%;
+  min-height: 50vw;
+}
+.pointer {
+  cursor: pointer;
 }
 .scrollbar {
   background-color: aliceblue;
@@ -250,29 +320,70 @@ body {
   max-height: 720px;
   width: 100%;
 }
+.signUpContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: content-box;
+  width: 26%;
+  height: 400px;
+  margin-left: 39%;
+}
+.signUpHeader {
+  margin-top: 13px;
+  position: relative;
+  left: 33px;
+  height: 50px;
+  border-bottom: 2px solid #252833;
+  background-image: url("../images/index/logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 .show {
   display: block;
   margin-top: 200px;
 }
 .sticky {
-  z-index: 1;
+  z-index: 100;
+  height: 0px;
   float: right;
   position: sticky;
   top: 0;
   font-size: 20px;
 }
-.test {
-  height: 2px;
-  width: 200px;
-  background-color: black;
-  margin-left: 50px;
-  margin-top: 20px;
+.testContainer {
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  width: aut1o;
+  height: 300px;
+  justify-content: flex-start;
 }
 .tickets {
-  padding-top: 200px;
   display: flex;
+  align-items: center;
+  padding-right: 10%;
+  justify-content: center;
   flex-direction: column;
+  justify-content: center;
+  vertical-align: middle;
   color: #f9f9f9;
   font-size: 22px;
-  padding-right: 10vw;
+  color: #c0c0c0;
+  font-size: 20px;
+}
+@media (max-width: 930px) {
+  #containerImage1 {
+    background-image: url(../images/index/originalTab.jpg);
+  }
+  h1 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 350px) {
+  #containerImage1 {
+    background-image: url(../images/index/originalSmart.jpg);
+  }
 }

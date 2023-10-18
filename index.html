@@ -18,18 +18,35 @@
       <h4>
         Sichere dir 12 Monate zum Preis von 9*. Endet am 31. Oktober.<a
           href="sign-up.html"
-          >Jetzt registrieren
+        >
+          Jetzt registrieren
         </a>
       </h4>
     </aside>
-    <div class="sticky"><button class="einloggen">EINLOGGEN</button></div>
+    <div class="sticky">
+      <button
+        onclick="window.location.href='login.html';"
+        class="einloggen pointer"
+      >
+        EINLOGGEN
+      </button>
+    </div>
     <div class="main">
-      <div class="indexOriginal" id="containerImage1">
+      <div class="indexOriginalTop" id="containerImage1">
         <div class="mainFont">
-          Streame brandneue Originals, Blockbuster, Serien mit Binge-
-          <br />Faktor und mehr <br /><br />
+          <h1>
+            Streame brandneue Originals, Blockbuster, Serien mit Binge- Faktor
+            und mehr
+          </h1>
+          <br />
           <h4>Keine extra Kosten. Jederzeit kündbar.**</h4>
-          <button class="buttonRegister">JETZT REGISTRIEREN</button>
+          <br />
+          <button
+            class="buttonRegister pointer"
+            onclick="window.location.href='sign-up.html';"
+          >
+            JETZT REGISTRIEREN</button
+          ><br />
           <span class="fine"
             >* Gültig für Verbraucher ab 18 Jahren. Sichere dir jetzt mit einem
             Jahresabo 12 Monate lang Disney+ zum Preis von weniger als 9 Monaten
@@ -46,7 +63,7 @@
       <div>
         <div class="container">
           <h2>Nur auf Disney+</h2>
-          <br />
+
           <p>
             Exklusive Filme, Serien und Originals, die du bei keinem anderen
             Streaming-Dienst findest.
@@ -96,42 +113,164 @@
         class="mainContainer"
         style="margin-top: 200px; margin-left: 5vw; display: flex"
         id="containerImage10"
-      >
-        <div class="indexOriginal"></div>
-        <div class="tickets">
-          <h2>Magische Streaming-Momente zum Verschenken!</h2>
+      ></div>
+      <div class="tickets">
+        <h2>Magische Streaming-Momente zum Verschenken!</h2>
+        <br />
+        <ul>
+          <li>
+            Entdecke unsere neuen Gutscheinkarten - 3, 6 oder 12 Monate voller
+            <br />Geschichten, ohne automatische Verlängerung.
+          </li>
           <br />
-          <ul>
-            <li>
-              Entdecke unsere neuen Gutscheinkarten - 3, 6 oder 12 Monate voller
-              <br />Geschichten, ohne automatische Verlängerung.
-            </li>
-            <br />
-            <li>
-              Unsere Disney+ Geschenk-Karten findest du jetzt im stationären
-              Handel.
-            </li>
-            <br />
-            <li>
-              Kunden mit bestehendem Disney+ Abo können den Code erst nach
-              Ablauf ihres aktuellen Abo-Zeitraums verwenden. Einlösbar nur in
-              Österreich und ab 18 Jahren.
-            </li>
-          </ul>
-        </div>
+          <li>
+            Unsere Disney+ Geschenk-Karten findest du jetzt im stationären
+            Handel.
+          </li>
+          <br />
+          <li>
+            Kunden mit bestehendem Disney+ Abo können den Code erst nach Ablauf
+            ihres aktuellen Abo-Zeitraums verwenden. Einlösbar nur in Österreich
+            und ab 18 Jahren.
+          </li>
+        </ul>
       </div>
     </div>
     <div class="middleFont"><h2>Häufig gestellte Fragen</h2></div>
     <section style="background-color: aliceblue; display: grid">
       <button class="buttonAction" id="safd">Was bietet dir Disney+?</button>
-      <button onclick="myFunction()" class="buttonAction" id="dropBtn">
-        Was bietet dir Disney+?
+      <button class="buttonAction" id="safd">
+        Was kann ich auf Disney+ anschauen?
       </button>
-      <div id="myDropdown" class="dropdown-content">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </div>
+      <button class="buttonAction" id="safd">Wie viel kostet Disney+?</button>
+      <button class="buttonAction" id="safd">
+        Welche Endgeräte werden unterstützt
+      </button>
+      <button class="buttonAction" id="safd">
+        wie kann ich mein Disney+ Abo kündigen?
+      </button>
     </section>
+    <div class="middleFont" style="line-height: 50px; margin-top: 100px">
+      <h2>Auf deinem Lieblingsgerät verfügbar</h2>
+      <br />
+    </div>
+    <div class="containerIcon2">
+      <div class="gridContainer">
+        <img
+          src="images/index/iconTv.png"
+          alt="TV-Serien"
+          width="100%"
+          height="auto"
+        />
+        <img
+          src="images/index/iconComputer.png"
+          alt="TV-Serien"
+          width="100%"
+          height="auto"
+        />
+        <img
+          src="images/index/iconSp.png"
+          alt="TV-Serien"
+          width="100%"
+          height="auto"
+        />
+        <img
+          src="images/index/iconGaming.png"
+          alt="TV-Serien"
+          width="100%"
+          height="auto"
+        />
+      </div>
+    </div>
+    <div>
+      <div class="containerIcon2">
+        <div class="indexIcon" id="containerFont1">
+          <h3>TV</h3>
+          <br />
+          <p>Amazon Fire TV</p>
+          <p>Android TV-Endgeräte</p>
+          <p>Apple TV</p>
+          <p>Chromecast</p>
+          <p>LG TVs</p>
+          <p>Samsung</p>
+          <p>MagentaTV Stick</p>
+        </div>
+        <div class="indexIcon" id="containerFont1">
+          <h3>Computer</h3>
+          <br />
+          <p>Chrome-Betriebssystem</p>
+          <p>MacOS</p>
+          <p>Windows PC</p>
+        </div>
+        <div class="indexIcon" id="containerFont1">
+          <h3>Mobiltelefon und Tablet</h3>
+          <br />
+          <p>Amazon Fire Tablet</p>
+          <p>Android-Telefone und -Tablets</p>
+          <p>iPhone und iPad</p>
+        </div>
+        <div class="indexIcon" id="containerFont1">
+          <h3>Spielkonsolen</h3>
+          <br />
+          <p>PS4</p>
+          <p>PS5</p>
+          <p>Xbox One</p>
+          <p>Xbox Series X</p>
+          <p>Xbox Series S</p>
+        </div>
+      </div>
+    </div>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <footer>
+      <img
+        src="logo.png"
+        alt="DisneLogo"
+        width="100"
+        style="display: block; margin-left: auto; margin-right: auto"
+      />
+      <div class="mainContainer" style="display: flex; justify-content: center">
+        <span
+          class="fine"
+          style="
+            display: flex;
+            text-align: center;
+            justify-content: baseline;
+            align-items: center;
+            min-height: 100px;
+          "
+        >
+          <p style="font-size: 12px; font-weight: 400; margin: 110px">
+            Datenschutzerklärung
+          </p>
+          <p style="font-size: 12px; font-weight: 400; margin: 30px">
+            Cookie-Richtlinie
+          </p>
+          <p style="font-size: 12px; font-weight: 400; margin: 30px">
+            UK & EU-Datenschutzhinweise
+          </p>
+          <p style="font-size: 12px; font-weight: 400; margin: 30px">
+            Impressum
+          </p>
+          <p style="font-size: 12px; font-weight: 400; margin: 30px">
+            Nutzungsvertrag
+          </p>
+          <p style="font-size: 12px; font-weight: 400; margin: 30px">
+            Hilfe-Center
+          </p>
+          <p style="font-size: 12px; font-weight: 400; margin: 30px">
+            Unterstützte Endgeräte
+          </p>
+          <p style="font-size: 12px; font-weight: 400; margin: 30px">
+            Interessenbezogene Werbung
+          </p>
+          <p style="font-size: 12px; font-weight: 400; margin: 30px">
+            Einstellungen verwalten
+          </p>
+          <p style="font-size: 12px; font-weight: 400; margin: 110px">
+            © Disney. Alle Rechte vorbehalten.
+          </p>
+        </span>
+      </div>
+    </footer>
   </body>
 </html>
