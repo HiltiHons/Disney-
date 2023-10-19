@@ -1,3 +1,19 @@
+<?php
+  require("connection.php");
+
+  if(isset($_POST["submit"])){
+
+    $username = $_POST["username"];
+    $password = $_POST["password"];
+
+    $stmt = $con->prepare("SELECT * FROM users WHERE username=:username");
+$stmt->bindParam(":username", $username); $stmt->execute(); $userExists =
+$stmt->fetchAll(); var_dump($userExists); $passwordHashed =
+$userExists[0]["password"]; $checkPassword = password_verify($password,
+$passwordHashed); if($checkPassword === false){ echo "Login fehlgeschlagen,
+Passwort stimmt nicht überein"; } if($checkPassword === true){ session_start();
+$_SESSION["username"] = $userExists[0]["username"]; header("Location:
+homepage.php"); } } ?>
 <!DOCTYPE html>
 <html lang="de-at">
   <head>
@@ -11,12 +27,16 @@
       }
     </script>
   </head>
-  <body style="background-color: #1a1d29;">
-    <header style="height: 80vh;">
-      <div
-        class="signUpHeader pointer"
-        onclick="window.location.href='index.html';"
-      ></div>
+  <body style="background-color: #1a1d29">
+    <header style="height: 80vh">
+      <div class="signUpHeader">
+        <a href="index.html">
+          <img
+            src="images/index/logo.png"
+            style="width: 80px; position: relative; left: 34px"
+          />
+        </a>
+      </div>
       <div class="signUpContainer" style="display: grid">
         <br />
         <h2>Mit E-Mail-Adresse einloggen</h2>
@@ -25,13 +45,22 @@
           in dein Disney+ Konto einloggen und deine Lieblingsserien und -filme
           streamen.
         </p>
-        <input
-          type="email"
-          placeholder="E-Mail-Adresse"
-          style="font-size: 20px"
-        />
-        <button class="buttonRegister">Weiter</button>
-        <p>Neu bei Disney+? <a href="sign-up.html">Registrieren</a></p>
+        <form action="login.php" method="post">
+          <input
+            type="email"
+            width="300px"
+            placeholder="E-Mail-Adresse"
+            style="font-size: 20px"
+          /><br /><br />
+          <input
+            type="password"
+            placeholder="Passwort"
+            style="font-size: 20px"
+          />
+          <br /><br />
+          <button class="buttonRegister">Weiter</button>
+          <p>Neu bei Disney+? <a href="sign-up.html">Registrieren</a></p>
+        </form>
         <br />
       </div>
     </header>
@@ -42,40 +71,6 @@
         width="100"
         style="display: block; margin-left: auto; margin-right: auto"
       />
-      <div class="mainContainer" style="display: flex; justify-content: center">
-        <span class="fine" style="display: flex">
-          <p style="font-size: 12px; font-weight: 400; margin: 110px">
-            Datenschutzerklärung
-          </p>
-          <p style="font-size: 12px; font-weight: 400; margin: 30px">
-            Cookie-Richtlinie
-          </p>
-          <p style="font-size: 12px; font-weight: 400; margin: 30px">
-            UK & EU-Datenschutzhinweise
-          </p>
-          <p style="font-size: 12px; font-weight: 400; margin: 30px">
-            Impressum
-          </p>
-          <p style="font-size: 12px; font-weight: 400; margin: 30px">
-            Nutzungsvertrag
-          </p>
-          <p style="font-size: 12px; font-weight: 400; margin: 30px">
-            Hilfe-Center
-          </p>
-          <p style="font-size: 12px; font-weight: 400; margin: 30px">
-            Unterstützte Endgeräte
-          </p>
-          <p style="font-size: 12px; font-weight: 400; margin: 30px">
-            Interessenbezogene Werbung
-          </p>
-          <p style="font-size: 12px; font-weight: 400; margin: 30px">
-            Einstellungen verwalten
-          </p>
-          <p style="font-size: 12px; font-weight: 400; margin: 110px">
-            © Disney. Alle Rechte vorbehalten.
-          </p>
-        </span>
-      </div>
     </footer>
   </body>
 </html>
